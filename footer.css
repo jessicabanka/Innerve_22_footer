@@ -15,7 +15,7 @@ body {
     display: grid;
     position: relative;
     grid-area: footer;
-    min-height: 12rem;
+    min-height: 6rem;
   }
   body .footer .bubbles {
     position: absolute;
@@ -39,8 +39,8 @@ body {
     z-index: 2;
     display: grid;
     grid-template-columns: 1fr auto;
-    grid-gap: 4rem;
-    padding: 2rem;
+    grid-gap: 2rem;
+    padding: 1rem;
     background: var(--footer-background);
   }
   body .footer .content a, body .footer .content p {
@@ -67,8 +67,8 @@ body {
   }
   body .footer .content > div .image {
     align-self: center;
-    width: 4rem;
-    height: 4rem;
+    width: 2rem;
+    height: 2rem;
     margin: 0.25rem 0;
     background-size: cover;
     background-position: center;
