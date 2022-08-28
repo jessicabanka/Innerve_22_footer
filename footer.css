@@ -15,14 +15,15 @@ body {
     display: grid;
     position: relative;
     grid-area: footer;
-    min-height: 6rem;
+    max-height: 4rem;
+  
   }
   body .footer .bubbles {
     position: absolute;
     top: 0;
     left: 0;
     right: 0;
-    height: 1rem;
+    height: 0.10rem;
     background: var(--footer-background);
     filter: url("#blob");
   }
@@ -36,11 +37,12 @@ body {
     transform: translate(-50%, 100%);
   }
   body .footer .content {
-    z-index: 2;
+    z-index: 1;
     display: grid;
     grid-template-columns: 1fr auto;
-    grid-gap: 2rem;
-    padding: 1rem;
+    grid-gap: 0rem;
+    padding: 0.5rem;
+    
     background: var(--footer-background);
   }
   body .footer .content a, body .footer .content p {
@@ -56,16 +58,19 @@ body {
   }
   body .footer .content > div {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    flex-direction:row;
+    justify-content: left;
   }
   body .footer .content > div > div {
     margin: 0.25rem 0;
   }
   body .footer .content > div > div > * {
     margin-right: 0.5rem;
+    display: flex;
   }
   body .footer .content > div .image {
+    display: flex;
+    flex-direction: row;
     align-self: center;
     width: 2rem;
     height: 2rem;
